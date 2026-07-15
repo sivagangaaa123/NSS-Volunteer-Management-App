@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const AddVolunteer = () => {
     const[input, changeInput]=useState({
@@ -38,7 +39,7 @@ const AddVolunteer = () => {
     }
   return (
     <div>
-
+<NavigationBar/>
 <h1><center>Add Volunteer</center></h1>
          <div className="container">
              <div className="row">
@@ -71,7 +72,7 @@ const AddVolunteer = () => {
 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <label className="form-label">Email</label>
     <input
-        type="text"
+        type="email"
         className="form-control"
         required
         name="Email"
@@ -83,7 +84,7 @@ const AddVolunteer = () => {
 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <label className="form-label">Phone</label>
     <input
-        type="email"
+        type="number"
         className="form-control"
         name="Phone"
         value={input.Phone}
@@ -94,7 +95,7 @@ const AddVolunteer = () => {
 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <label className="form-label">Date of Birth</label>
     <input
-        type="tel"
+        type="date"
         className="form-control"
         name="DateofBirth"
         value={input.DateofBirth}
@@ -115,7 +116,7 @@ const AddVolunteer = () => {
 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <label className="form-label">Blood Group</label>
     <input
-        type="number"
+        type="text"
         className="form-control"
         name="BloodGroup"
         value={input.BloodGroup}
@@ -136,7 +137,7 @@ const AddVolunteer = () => {
 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <label className="form-label">Year of Study</label>
     <input
-        type="text"
+        type="number"
         className="form-control"
         name="YearofStudy"
         value={input.YearofStudy}
@@ -169,7 +170,7 @@ const AddVolunteer = () => {
 <div className="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     <label className="form-label">Address</label>
     <input
-        type="date"
+        type="text"
         className="form-control"
         name="Address"
         value={input.Address}
